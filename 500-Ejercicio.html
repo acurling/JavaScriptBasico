@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    // mayor de tres numeros
+
+    <script>
+        function encontrarMayorDeTres(num1, num2, num3) {
+            let mayor;
+
+            if (num1 >= num2 && num1 >= num3) {
+                mayor = num1;
+            } else if (num2 >= num1 && num2 >= num3) {
+                mayor = num2;
+            } else {
+                mayor = num3;
+            }
+
+            return mayor;
+        }
+
+        const numero1 = 10;
+        const numero2 = 25;
+        const numero3 = 12;
+
+        const mayorNumero = encontrarMayorDeTres(numero1, numero2, numero3);
+        document.write(mayorNumero);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // variables dinamicas y estaticos
+        // dinamico por que puedes cambiar el valor de una variable de string a number
+        // variable primitivas: string, number, boolean undefined, null 
+        // Variables de referencia: Object, Array, Function
+        let nombre = 'Alexander';
+        let edad = 50; // no hay floating y integer todos son number
+        let aprobado = false;
+        let apellido = undefined;
+        let selcolor = null;
+       
+       /* 
+        document.write(typeof name);
+        docuemnt.write("<br>");
+        document.write(typeof selcolor); // determinado en runtime
+        docuemnt.write("<br>");
+        document.write(typeof selcolor); // type is object
+   
+        */
+       // Variables por referencia :  Object, Array, Function
+
+        let  persona = {
+        name:'Alex',
+        age: 50
+        };
+        // Dot notation
+        persona.name='Carla';
+        document.write(persona.name,' ' ,persona.age);
+       document.write("<br>");
+        // Bracket notation
+        let seleccione = 'name';
+        persona[seleccione] = 'Mary pilar';
+        document.write(persona.name,' ' ,persona.age);
+
+
+    </script>
+</body>
+
+</html>

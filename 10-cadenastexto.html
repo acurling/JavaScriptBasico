@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     
+<script>
+    let t1 = 'Alexander benjamin';
+    let t2 = "Alex";
+    let t3 = "hola mundo 'vida' y verdad";
+    document.write('<br>');
+    document.write(t1);
+    document.write('<br>');;
+    document.write(t2);
+    document.write('<br>');
+    document.write(t3);
+
+    // salto de linea
+    // se puede concatenar con +
+
+    let t4= 'esto es una cadena larga' +
+    ' que neceista que diviadamos en varias lineas'+
+    ' codigo ilegible';
+
+    let t5= 'esto es una cadena larga \
+     que neceista que diviadamos en varias lineas\
+    codigo ilegible';
+
+    document.write('<br>');
+    document.write(t5);
+    document.write('<br>');
+    //funciones string
+    //ver tamano de un texto 
+    document.write(t2.length);
+    document.write('<br>');
+    // primeras dos letras
+    document.write(t2.slice(0,2));
+    document.write('<br>');
+    // funcion substring
+    document.write(t1.substring(2,5));
+    document.write('<br>');
+
+    // cambiar valores en texto
+    let palabra = 'buen dia a todos';
+    document.write(palabra.replace('dia', 'noches'))
+    document.write('<br>');
+
+    // poner en mayusculas
+    document.write(palabra.toUpperCase())
+    document.write('<br>');
+
+    // poner en minusculas
+    document.write(palabra.toLocaleLowerCase())
+    document.write('<br>');
+    
+    // unir texto
+    document.write(palabra.concat(t1));
+    document.write('<br>');
+
+    // acortar espacios entre texto trim ambos
+    // trim start para lado izquiero
+    //trimend para lado derecho
+
+
+// cortar cantidad de caracteres
+// split
+
+
+</script>
+
+</body>
+</html>

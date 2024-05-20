@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1 funciones
+        function saludar()
+        {
+            document.writeln("Saludar");
+        }
+
+        saludar();
+        document.writeln("<br>");
+   // 2-
+        function saludarVariable(name)
+        {
+            document.writeln('hola ' + name);
+        }
+
+
+        saludarVariable('Alex');
+        saludarVariable('Mary');
+        document.writeln("<br>");
+      //  3
+      function saludarVariable1(name, apellido)
+        {
+            document.writeln('hola ' + name + ' '+ apellido);
+        }
+        saludarVariable1('Mary', 'Smith');
+        document.writeln("<br>");
+        
+        // 4 Calcular un valor
+        function square(number) {
+            return number*number;
+        }
+       let number = square(2);
+        document.write(number);
+    </script>
+</body>
+</html>

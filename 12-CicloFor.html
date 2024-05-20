@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1>Demo: for loop</h1>
+<p id="p0"></p>
+<p id="p1"></p>
+<p id="p2"></p>
+<p id="p3"></p>
+<p id="p4"></p>
+
+<script>
+    for (var i = 0; i < 5; i++) {
+        document.getElementById("p" + i).innerHTML = i;
+    }
+
+    //////////////////////////////
+    var arr = [10, 11, 12, 13, 14];
+
+    for (var i = 0; i < 5; i++) {
+        document.getElementById("p" + i).innerHTML = arr[i];
+    }
+
+    ////////////////////////////
+    var arr = [10, 11, 12, 13, 14];
+    var i = 0;
+
+    for (; ;) {
+
+        if (i >= 5)
+            break;
+
+        document.getElementById("p" + i).innerHTML = arr[i];
+
+        i++;
+    }
+
+</script>
+
+<body>
+
+</body>
+
+</html>

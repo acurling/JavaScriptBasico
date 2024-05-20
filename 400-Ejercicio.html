@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <h1> tes </h1>
+    <input type="text" id="textoEntrada" placeholder="Ingrese texto">
+    <label for="lnombre" id="casa"></label>
+    <span id="textoSalida">  </span>
+    <button onclick="copiarTexto()">Copiar</button>
+<script>
+    function copiarTexto() {
+            const textoEntrada = document.getElementById('textoEntrada').value;
+            const textoSalida = document.getElementById('textoSalida');
+
+            textoSalida.textContent = textoEntrada;
+        
+        }
+
+</script>
+
+</body>
+</html>
